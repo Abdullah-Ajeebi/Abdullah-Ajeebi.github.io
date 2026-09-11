@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajeebi@inv: ~</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #d3d7cf;
+            font-family: Courier, "Courier New", Consolas, monospace;
+            font-size: 15px;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100vh;
+            overflow-y: auto;
+            cursor: text;
+        }
+
+        .user { color: #8ae234; font-weight: bold; }
+        .dir { color: #729fcf; font-weight: bold; }
+        
+        #output {
+            white-space: pre-wrap; 
+        }
+
+        .input-line { 
+            display: flex; 
+        }
+
+        .prompt { 
+            margin-right: 8px; 
+            white-space: nowrap; 
+        }
+
+        input {
+            background: transparent;
+            color: #d3d7cf;
+            border: none;
+            outline: none;
+            font-family: inherit;
+            font-size: inherit;
+            flex-grow: 1;
+            caret-color: #d3d7cf;
+			margin: 0px;
+			padding: 0px;
+        }
+    </style>
+</head>
+<body onclick="document.getElementById('cmd').focus();">
+
+    <div id="output">Macroshit Binbows [Version 10.0.19045.7725]
+(c) Macroshit Corporation. All rights unreserved.</div>
+
+    <div class="input-line">
+        <span class="prompt"><span class="user">ajeebi@inv</span>:<span class="dir">~</span>$</span>
+        <input type="text" id="cmd" autocomplete="off" spellcheck="false" autofocus>
+    </div>
+
+    <script>
+        const input = document.getElementById("cmd");
+        const output = document.getElementById("output");
+
+        const filesystem = {
+            'help': "Available commands:\n  whoami     - current user details\n  neofetch   - display system specifications\n  log        - print recent telemetry events\n  github     - open GitHub profile\n  clear      - wipe terminal history",
+            'whoami': "Abdullah Ajeebi.\nProfessional dumbass.\nKnows C#, Java (please do not ask for java advice), JS, H/JSON, and More™",
+            'github': "Hyperlinking your shit to <a href='https://github.com/Abdullah-Ajeebi' target='_blank' style='color:#729fcf;'>github.com/Abdullah-Ajeebi</a> right now",
+            'neofetch': `<span class="user">OS</span>: Windows 10 22H2
+<span class="user">Motherboard</span>: Gigabyte Z590 AORUS ULTRA
+<span class="user">CPU</span>: Intel i7-11700K (16) @ 3.60GHz (OC'd to 5GHz)
+<span class="user">GPU</span>: NVIDIA GeForce RTX 3060 (12GB VRAM)
+<span class="user">Memory</span>: 32000MiB @ 3600 MT/s (gear 1)
+<span class="user">Audio</span>: Every single one of them`,
+            'log': `The`
+        };
+
+        input.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                const cmd = input.value.trim().toLowerCase();
+                const rawCmd = input.value.trim();
+                input.value = "";
+                let outStr = `<br><span class="prompt"><span class="user">ajeebi@inv</span>:<span class="dir">~</span>$</span>${rawCmd}\n`;
+                if (cmd !== "") {
+                    if (cmd === "clear") {
+                        output.innerHTML = "";
+                        window.scrollTo(0, document.body.scrollHeight);
+                        return;
+                    }
+
+                    if (filesystem[cmd]) {
+                        outStr += filesystem[cmd];
+                        if(cmd === "github") {
+                            setTimeout(() => { window.open("https://github.com/Abdullah-Ajeebi", "_blank"); }, 500);
+                        }
+                    } else if (cmd.startsWith("sudo")) {
+                        outStr += `ay man fuck you doin' round here`;
+                    } else if (cmd.includes("nmi")) {
+                        outStr += `interesting`;
+                    } else {
+                        outStr += `bash: ${cmd}: command not found`;
+                    }
+                }
+
+                output.innerHTML += outStr;
+                
+                window.scrollTo(0, document.body.scrollHeight);
+            }
+        });
+    </script>
+</body>
+</html>
