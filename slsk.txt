@@ -1,0 +1,177 @@
+[ 4343162547]  /
+├── [  241219803]  DarkR3D
+│   └── [  241219803]  LP1
+│       └── [  241219803]  01. Brother Louie (Special Long Version).flac
+├── [   16932786]  GoldenightMC
+│   └── [   16932786]  Mario's Mystery Meat OST
+│       └── [   16932786]  59. Curse of the Meat [Cursed Cathedral (Custom)].flac
+├── [   36414891]  Hayden2000
+│   └── [   36414891]  Jumping all over the world - Whatever yo
+│       └── [   36414891]  2-09 The Logical Song.flac
+├── [  308659549]  Jezulkim
+│   └── [  308659549]  Creative Connection- You're My Heart, You're My Soul (Special Disco Version, 12'') 1985
+│       └── [  308659549]  01. You're My Heart, You're My Soul (Special Disco Version).flac
+├── [  126688501]  K1RZA
+│   └── [  126688501]  1998.Brother Louie '98
+│       ├── [  126687648]  Modern Talking - Brother Louie '98.flac
+│       └── [        853]  Modern Talking - Brother Louie '98.flac.cue
+├── [   29511683]  KaidoGG
+│   └── [   29511683]  Phonk
+│       └── [   29511683]  3. Ogryzek - AURA  (Slowed).flac
+├── [   89842185]  KingRobin
+│   └── [   89842185]  CD 01
+│       └── [   89842185]  Gigi D'Agostino - L'amour toujours - 02 - L'amour toujours.flac
+├── [   76669857]  MUSIC IS MY THERAPY
+│   └── [   76669857]  TheFatRat - Unity - 10th Anniversary Compilation (2024)
+│       ├── [   35325698]  01 - TheFatRat - Unity.flac
+│       └── [   41344159]  04 - TheFatRat - Monody (feat. Laura Brehm).flac
+├── [  400485536]  NightHawk
+│   └── [  400485536]  [1999] Running In The 90's , Golden Age (Delta - DELTA 1069)
+│       ├── [  132449882]  A - 1. Running In The 90's (Extended Mix).flac
+│       ├── [   23783935]  A - 2. Running In The 90's (Acappella).flac
+│       ├── [  107474702]  B - 1. Running In The 90's (I Love Mini Mix).flac
+│       ├── [  136638355]  B - 2. Golden Age (Extended Mix).flac
+│       ├── [     138373]  Max Coveri - Running In The 90's , Golden Age (Delta - DELTA 1069).jpg
+│       └── [        289]  Rip Info.txt
+├── [   59701304]  PurifierUnit
+│   └── [   59701304]  Smooth McGroove Remixed 2
+│       └── [   59701304]  01 A_Rival - Guile's Theme (Street Fighter 2).wav
+├── [   91494874]  StellaStarr
+│   └── [   91494874]  Selection 3
+│       └── [   91494874]  09 Guile's Theme Mitch Murder Selection 3 2015.flac
+├── [   32874811]  StonyTark
+│   └── [   32874811]  Gas Gas Gas (2019)
+│       └── [   32874811]  Manuel - Gas Gas Gas - 03 - Gas Gas Gas (instrumental version).flac
+├── [   28217720]  a-pasta-sea
+│   └── [   28217720]  Medieval Style
+│       └── [   28217720]  06 - Axel F.flac
+├── [   34063359]  abf3427
+│   └── [   34063359]  FLAC
+│       └── [   34063359]  Time Leaper - Hinkik.flac
+├── [   22941423]  an0n
+│   └── [   22941423]  Europop 1999
+│       └── [   22941423]  Eiffel 65 - Blue (Da Ba Dee).flac
+├── [   69781347]  crossfield
+│   └── [   69781347]  LP2
+│       └── [   69781347]  C4 You're My Heart, You're My Soul.flac
+├── [   26779177]  crossharbour
+│   └── [   26779177]  library
+│       ├── [   26118834]  20260727 081005 Bad Style - Time Back (Audio Fast Version).flac
+│       └── [     660343]  20260727 081005 Bad Style - Time Back (Audio Fast Version)2.flac
+├── [  209790938]  d-cay303
+│   └── [  209790938]  Michael Jackson - Number Ones (2008) [DTS-FLAC 5.1]
+│       ├── [   40761172]  01 - Can You Feel It.dts.flac
+│       └── [  169029766]  48. Bad (24 Bit).flac
+├── [   51105239]  deviation32
+│   └── [   51105239]  Commercial Dance (Unsorted)
+│       └── [   51105239]  Crazy Frog - Axel F (Instrumental).flac
+├── [   18986751]  dungbinky
+│   └── [   18986751]  Super Mario 3D World Original Soundtrack
+│       └── [   18986751]  22 - Beep Block Skyway.flac
+├── [   16271626]  ensemble
+│   └── [   16271626]  LOVESICK, CANNIBAL! (2023)
+│       └── [   16271626]  femtanyl - LOVESICK, CANNIBAL! - 01 LOVESICK, CANNIBAL!.flac
+├── [   53591506]  firiusfoxx
+│   └── [   53591506]  Five Nights At Freddy's (10th anniversary) (2024)
+│       └── [   53591506]  02 - Five Nights At Freddy's (10th anniversary) (instrumental) (FLAC 24bit 1536 kbps) -WEB.flac
+├── [   51040073]  ghjdkght
+│   └── [   51040073]  complete
+│       └── [   51040073]  TheFatRat - Unity [n8X9_MgEdCg].flac
+├── [   40211442]  gianmarcogg03
+│   └── [   40211442]  Infectious
+│       └── [   40211442]  01 Infectious.flac
+├── [   64324043]  hiyakara
+│   └── [   64324043]  Spirit Phone (2021)
+│       └── [   64324043]  09 ☆ Soft Fuzzy Man.flac
+├── [  343387168]  hyot2
+│   └── [  343387168]  Scatman John - 1995 - Scatman's World
+│       ├── [       1691]  CDImage.flac.cue
+│       ├── [  343384506]  CDImage.flac.flac
+│       └── [        971]  Scatman's World.log
+├── [   52409794]  johnthedon
+│   └── [   52409794]  Music
+│       ├── [   29395586]  1. Hinkik - Outbreaker  [QM4DW1622204].flac
+│       └── [   23014208]  TheFatRat - Time Lapse.flac
+├── [   15737092]  kula35
+│   └── [   15737092]  Terraria (Soundtrack)
+│       └── [   15737092]  11. Boss2.flac
+├── [   61473348]  kuroro77
+│   └── [   61473348]  08-12-2024-R-LL
+│       └── [   61473348]  0351. Piano Fantasia - Song For Denise (Wide Walking Extended Version).flac
+├── [  108596576]  kutiz
+│   └── [  108596576]  32
+│       └── [  108596576]  Aryx - Karsten Koch.flac
+├── [   29462543]  kzakz
+│   └── [   29462543]  We See The Same Sun
+│       └── [   29462543]  02 Coco Jamboo (Radio Version).flac
+├── [   25845554]  macro
+│   └── [   25845554]   Five Nights at Freddy's 1 Song  [From The Living Tombstone] (2014) [FLAC] [24B-48kHz]
+│       └── [   25845554]  01. A_A_RonHD - Five Nights at Freddy's 1 Song  [From The Living Tombstone].flac
+├── [   39867849]  peachleaf
+│   └── [   39867849]  EarthBound Halloween Hack (Original Soundtrack) (2009)
+│       └── [   39867849]  1-12. Megalovania.flac
+├── [   51898542]  petom0
+│   └── [   51898542]  Hello
+│       └── [   51898542]  Hello - OMFG.flac
+├── [   99310893]  pixelmelt
+│   ├── [   25932702]  Blood Code - VGM Essentials_ BLOOD CODE
+│   │   └── [   25932702]  06 - Dire, Dire Docks (from _Super Mario 64_).flac
+│   ├── [   26638617]  Lensko
+│   │   └── [   26638617]  Lensko - Let's Go!.flac
+│   └── [   46739574]  nokbient
+│       └── [   46739574]  nokbient - Dire Dire Docks.flac
+├── [   73916069]  pmradoll
+│   └── [   73916069]  Crazy Frog presents Crazy Hits - 2005
+│       ├── [   36623953]  Axel_F.flac
+│       ├── [   36624121]  Axel_F.rar
+│       └── [     667995]  cover.png
+├── [   30390929]  poly-blooper
+│   └── [   30390929]  VA - Best Of 90s
+│       └── [   30390929]  Maxx - Get-A-Way.flac
+├── [  189416882]  quake_machinegun
+│   └── [  189416882]  LP- 2
+│       └── [  189416882]  01 - Sadeness (Part I).flac
+├── [   38963066]  rogototo
+│   └── [   38963066]  CD2
+│       └── [   38963066]  05. Manuel - Gas Gas Gas.flac
+├── [    8610920]  scummo
+│   └── [    8610920]  Disc 2
+│       └── [    8610920]  05 Stage 3 (Journey to Silius).flac
+├── [  122089046]  smokiness6040
+│   └── [  122089046]  Minecraft – Volume Beta (2013)
+│       └── [  122089046]  13 - Aria Math.flac
+├── [   57441301]  startle-cocky-deanna1
+│   └── [   57441301]  [1992] Happy Nation
+│       └── [   57441301]  04. Ace of Base - Happy Nation.flac
+├── [  100798944]  thisusernamewasntaken
+│   └── [  100798944]  Soundtrack Smashes #1's
+│       └── [  100798944]  Axel F (From  Beverly Hills Cop  Soundtrack)   11.flac
+├── [   57666447]  toxic-shot666
+│   └── [   57666447]  Happy Nation
+│       └── [   57666447]  Ace of Base - Happy Nation - 04 - Happy Nation.flac
+├── [   45032120]  uggyflacko
+│   └── [   45032120]  KATAMARI - single 2023 XW nvr hapnnd records
+│       └── [   45032120]  01 - KATAMARI.flac
+├── [   27100120]  user3372818743
+│   └── [   27100120]  Five Nights at Freddy’s (2014)
+│       └── [   27100120]  The Living Tombstone - 02 - Five Nights at Freddy’s instrumental mix.flac
+├── [  171121242]  velvetcandy9
+│   └── [  171121242]  Let's Talk About Love (1985)
+│       └── [  171121242]  0101 Cheri Cheri Lady.flac
+├── [   24437220]  weirdpossum
+│   └── [   24437220]  Five Nights at Freddy’s
+│       └── [   24437220]  01_Five Nights at Freddy’s.flac
+├── [  175732336]  wer_bist_du_den
+│   └── [  175732336]  MODERN TALKING - (1986) The 3rd Album Ready For Romance (LP, Album){24bit-192kHz}
+│       └── [  175732336]  A1 Brother Louie.flac
+├── [   39636430]  wheeljack77
+│   └── [   39636430]  ultimatevocalremover
+│       └── [   39636430]  1_09. Max Coveri - Running in the 90's_(Instrumental).flac
+├── [   81475043]  wickedshiesty
+│   └── [   81475043]  Happy Nation (1992)
+│       └── [   81475043]  Ace of Base - Happy Nation - 02 - Happy Nation (radio edit).flac
+└── [   73744649]  wildwolf23
+    └── [   73744649]  Tracked (1991–2000)
+        └── [   73744649]  02 Second Reality (Unreal 2).flac
+
+106 directories, 68 files
