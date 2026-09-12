@@ -19,10 +19,14 @@
         }
 
         .user { color: #8ae234; font-weight: bold; }
-        .dir { color: #729fcf; font-weight: bold; }
+        .dir  { color: #729fcf; font-weight: bold; }
+        .tree { color: #68a0dc; }
+        .hint { color: #e9b96e; }
+        .err  { color: #ef2929; }
         
         #output {
             white-space: pre-wrap; 
+            margin-bottom: 5px;
         }
 
         .input-line { 
@@ -43,8 +47,8 @@
             font-size: inherit;
             flex-grow: 1;
             caret-color: #d3d7cf;
-			margin: 0px;
-			padding: 0px;
+            margin: 0px;
+            padding: 0px;
         }
     </style>
 </head>
@@ -63,7 +67,7 @@
         const output = document.getElementById("output");
 
         const filesystem = {
-            'help': "Available commands:\n  whoami     - current user details\n  neofetch   - display system specifications\n  log        - print recent telemetry events\n  github     - open GitHub profile\n  clear      - wipe terminal history",
+            'help': "Available commands:\n  whoami     - current user details\n  neofetch   - display system specifications\n  ls slsk    - query remote 4.045 GiB audio archive\n  open slsk  - mount external cloud download mirror\n  log        - print recent telemetry events\n  github     - open GitHub profile\n  clear      - wipe terminal history",
             'whoami': "Abdullah Ajeebi.\nProfessional dumbass.\nKnows C#, Java (please do not ask for java advice), JS, H/JSON, and More™",
             'github': "Hyperlinking your shit to <a href='https://github.com/Abdullah-Ajeebi' target='_blank' style='color:#729fcf;'>github.com/Abdullah-Ajeebi</a> right now",
             'neofetch': `<span class="user">OS</span>: Windows 10 22H2
@@ -75,25 +79,55 @@
             'log': `The`
         };
 
-        input.addEventListener("keydown", function(event) {
+        input.addEventListener("keydown", async function(event) {
             if (event.key === "Enter") {
                 const cmd = input.value.trim().toLowerCase();
                 const rawCmd = input.value.trim();
                 input.value = "";
+
                 let outStr = `<br><span class="prompt"><span class="user">ajeebi@inv</span>:<span class="dir">~</span>$</span>${rawCmd}\n`;
+                
                 if (cmd !== "") {
-                    if (cmd === "clear") {
-                        output.innerHTML = "";
+                    if (cmd === "ls slsk" || cmd === "dir slsk" || cmd === "slsk" || cmd === "tree") {
+                        output.innerHTML += outStr + `Mounting cloud volume...\nFetching live 4.045 GiB Soulseek tree index...\n\n`;
+                        window.scrollTo(0, document.body.scrollHeight);
+
+                        try {
+                            const response = await fetch("slsk.txt");
+                            if (!response.ok) throw new Error("Index not found");
+                            const treeData = await response.text();
+
+                            output.innerHTML += `<span class="tree">${treeData}</span>`;
+                            output.innerHTML += `\n<span class="hint">[Access Granted]: To mount external container and download items, type 'open slsk'</span>`;
+                        } catch (err) {
+                            output.innerHTML += `<span class="err">Error 0xC0000409: Remote storage index offline. (Waiting on GitHub Action bot).</span>`;
+                        }
+
                         window.scrollTo(0, document.body.scrollHeight);
                         return;
                     }
 
-                    if (filesystem[cmd]) {
+                    if (cmd === "open slsk") {
+                        outStr += `Resolving cryptographic MEGA endpoint...\nBypassing local CGNAT routing...\n`;
+                        setTimeout(() => { 
+                            window.open("https://mega.nz/folder/xAw1RZBZ#qe6vMq9-O6yLfk4TUtEDiw", "_blank"); 
+                        }, 800);
+                    }
+
+                    else if (cmd === "clear") {
+                        output.innerHTML = "Macroshit Binbows [Version 10.0.19045.7725]\n(c) Macroshit Corporation. All rights unreserved.";
+                        window.scrollTo(0, document.body.scrollHeight);
+                        return;
+                    }
+
+                    else if (filesystem[cmd]) {
                         outStr += filesystem[cmd];
-                        if(cmd === "github") {
+                        if (cmd === "github") {
                             setTimeout(() => { window.open("https://github.com/Abdullah-Ajeebi", "_blank"); }, 500);
                         }
-                    } else if (cmd.startsWith("sudo")) {
+                    } 
+
+                    else if (cmd.startsWith("sudo")) {
                         outStr += `ay man fuck you doin' round here`;
                     } else if (cmd.includes("nmi")) {
                         outStr += `interesting`;
@@ -103,7 +137,6 @@
                 }
 
                 output.innerHTML += outStr;
-                
                 window.scrollTo(0, document.body.scrollHeight);
             }
         });
