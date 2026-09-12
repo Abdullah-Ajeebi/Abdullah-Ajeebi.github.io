@@ -1,0 +1,31 @@
+name: Cloud Scanner
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-file-tree:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the website repository
+        uses: actions/checkout@v3
+
+      - name: Install Rclone
+        run: sudo -v ; curl https://rclone.org/install.sh | sudo bash
+
+      - name: Mount Rclone Config
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "${{ secrets.MEGA_RCLONE_CONF }}" > ~/.config/rclone/rclone.conf
+
+      - name: Execute MEGA Cloud Index Scan
+        run: rclone tree mega:/slsk --size --human > slsk.txt
+
+      - name: Commit Updated List to Website
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Scanner-Bot"
+          git add slsk.txt
+          git diff-index --quiet HEAD || git commit -m "[Bot] Processed remote MEGA volumes & updated index"
+          git push
