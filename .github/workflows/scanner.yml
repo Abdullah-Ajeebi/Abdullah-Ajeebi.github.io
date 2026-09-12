@@ -20,7 +20,7 @@ jobs:
           echo "${{ secrets.MEGA_RCLONE_CONF }}" > ~/.config/rclone/rclone.conf
 
       - name: Execute MEGA Cloud Index Scan
-        run: rclone tree mega:/slsk --size --human > slsk.txt
+        run: rclone tree mega:/slsk --size > slsk.txt
 
       - name: Commit Updated List to Website
         run: |
