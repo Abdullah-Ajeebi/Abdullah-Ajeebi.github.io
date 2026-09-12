@@ -89,7 +89,7 @@
                 
                 if (cmd !== "") {
                     if (cmd === "ls slsk" || cmd === "dir slsk" || cmd === "slsk" || cmd === "tree") {
-                        output.innerHTML += outStr + `Mounting cloud volume...\nFetching live 4.045 GiB Soulseek tree index...\n\n`;
+                        output.innerHTML += outStr;
                         window.scrollTo(0, document.body.scrollHeight);
 
                         try {
@@ -98,9 +98,9 @@
                             const treeData = await response.text();
 
                             output.innerHTML += `<span class="tree">${treeData}</span>`;
-                            output.innerHTML += `\n<span class="hint">[Access Granted]: To mount external container and download items, type 'open slsk'</span>`;
+                            output.innerHTML += `\n<span class="hint">Opened. To access in the web browser, do 'open slsk'`;
                         } catch (err) {
-                            output.innerHTML += `<span class="err">Error 0xC0000409: Remote storage index offline. (Waiting on GitHub Action bot).</span>`;
+                            output.innerHTML += `<span class="err">Unknown error (fuck you unknown errors)</span>`;
                         }
 
                         window.scrollTo(0, document.body.scrollHeight);
@@ -108,7 +108,7 @@
                     }
 
                     if (cmd === "open slsk") {
-                        outStr += `Resolving cryptographic MEGA endpoint...\nBypassing local CGNAT routing...\n`;
+                        outStr += `Taking you to the storage hub (where I definitely didn't steal songs oh no that would be bad)`;
                         setTimeout(() => { 
                             window.open("https://mega.nz/folder/xAw1RZBZ#qe6vMq9-O6yLfk4TUtEDiw", "_blank"); 
                         }, 800);
