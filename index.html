@@ -67,7 +67,7 @@
         const output = document.getElementById("output");
 
         const filesystem = {
-            'help': "Available commands:\n  whoami     - current user details\n  neofetch   - display system specifications\n  ls slsk    - query remote 4.045 GiB audio archive\n  open slsk  - mount external cloud download mirror\n  log        - print recent telemetry events\n  github     - open GitHub profile\n  clear      - wipe terminal history",
+            'help': "Available commands:\n  whoami     - current user details\n  neofetch   - display system specifications\n  ls slsk    - query remote 4.045 GiB audio archive\n  open slsk  - mount external cloud download mirror\n  log        - print recent telemetry events\n  github     - open GitHub profile\n  clear      - wipe terminal history\n  myrepos    - see all of my repositories",
             'whoami': "Abdullah Ajeebi.\nProfessional dumbass.\nKnows C#, Java (please do not ask for java advice), JS, H/JSON, and More™",
             'github': "Hyperlinking your shit to <a href='https://github.com/Abdullah-Ajeebi' target='_blank' style='color:#729fcf;'>github.com/Abdullah-Ajeebi</a> right now",
             'neofetch': `<span class="user">OS</span>: Windows 10 22H2
@@ -146,6 +146,11 @@
                         window.scrollTo(0, document.body.scrollHeight);
                         return;
                     }
+					
+					else if (cmd == "myrepos") {
+						outStr += `mIDE: https://github.com/Abdullah-Ajeebi/mIDE`;
+						outStr += `\nmIDEdebugger: https://github.com/Abdullah-Ajeebi/mIDEdebugger`;
+					}
 
                     else if (filesystem[cmd]) {
                         outStr += filesystem[cmd];
